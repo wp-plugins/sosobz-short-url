@@ -1,8 +1,10 @@
 ﻿=== SosoBz Short URL ===
 Contributors: SosoBz
+Donate link: http://soso.bz
 Tags: short url, short, url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging,soso ,seo ,soso.bz ,blog tool
 Requires at least: 2.5
 Tested up to: 2.9.2
+Stable tag: 1.0
 
 Automatically shortens the blog post URL.
 
@@ -18,14 +20,14 @@ Also this will help promote your blog.
 
 1. Upload the `shorturl` folder to `/wp-content/plugins/`.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. When you post a new post, the plugin will automatically generate a short URL.
+3. When you post a new article, the plugin will automatically generate a short URL.
+
+== Screenshots ==
+
+1. A example of the effect
 
 == Changelog ==
 
 = 1.0.0 =
 
 * Initial release
-
-== Frequently Asked Questions ==
-
-No questions yet.
