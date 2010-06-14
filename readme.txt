@@ -18,7 +18,7 @@ Also this will help promote your blog.
 
 == Installation ==
 
-1. Upload the `shorturl` folder to `/wp-content/plugins/`.
+1. Upload the `sosobz-short-url` folder to `/wp-content/plugins/`.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. When you post a new article, the plugin will automatically generate a short URL.
 
