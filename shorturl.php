@@ -2,7 +2,7 @@
 /*
 Plugin Name: Soso.Bz Short URL
 Plugin URI: http://Soso.Bz
-Description: Automatically shortens the blog post URL. Based on GentleSource.
+Description: Automatically shortens the blog post URL.
 Version: 1.0.0
 Author: Soso.Bz
 Author URI: http://Soso.Bz
