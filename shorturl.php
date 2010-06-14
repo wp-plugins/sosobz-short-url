@@ -10,7 +10,7 @@ Author URI: http://Soso.Bz
 
 define('DEFAULT_API_URL', 'http://soso.bz/api.php?url=%s');
 
-class GentleSource_Short_URL
+class SosoBz_Short_URL
 {
     function create($post_id)
     {
@@ -46,8 +46,8 @@ class GentleSource_Short_URL
         }
 
         if ($result !== false) {
-            delete_post_meta($post_id, 'GentleSourceShortURL');
-            $res = add_post_meta($post_id, 'GentleSourceShortURL', $result, true);
+            delete_post_meta($post_id, 'SosoBzShortURL');
+            $res = add_post_meta($post_id, 'SosoBzShortURL', $result, true);
             return true;
         }
     }
@@ -76,7 +76,7 @@ class GentleSource_Short_URL
             $opt[$key] = get_option('gentlesourceShortUrl' . $key);
         }
 
-        $shortUrl = get_post_meta($post->ID, 'GentleSourceShortURL', true);
+        $shortUrl = get_post_meta($post->ID, 'SosoBzShortURL', true);
 
         if (empty($shortUrl)) {
             return $content;
@@ -93,7 +93,7 @@ class GentleSource_Short_URL
     }
 }
 
-$gssu = new GentleSource_Short_URL;
+$gssu = new SosoBz_Short_URL;
 
 if (is_admin()) {
     add_action('edit_post', array(&$gssu, 'create'));
