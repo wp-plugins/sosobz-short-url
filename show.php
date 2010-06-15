@@ -1,6 +1,22 @@
+<script type="text/javascript"> 
+function copySosoBz() 
+{ 
+var SosoBz=document.getElementById("SosoBz"); 
+SosoBz.select();
+document.execCommand("Copy");
+alert("Have been copied!"); 
+} 
+</script> 
 <div style="margin-top:2em;">
   <?php if ($opt['Display'] == 'Y'): ?>
-    <?php echo __('Short alternate link for this article: ') ?>
-    <a href="<?php echo $shortUrl ?>"><?php echo get_post_meta($post->ID, 'SosoBzShortURL', true); ?></a>
-  <?php endif ?>
+    <?php echo __("<font size='4'>* A <a href='http://soso.bz' target='_blank'> shorter link</a> for this article:&nbsp;&nbsp;</font>") ?>
+    <input type="text" size="25" id="SosoBz" onClick="copySosoBz()" value="<?php echo get_post_meta($post->ID, 'SosoBzShortURL', true); ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <p><a target="_blank" href="http://digg.com/submit?phase=2&url=<?php echo get_post_meta($post->ID, 'SosoBzShortURL', true); ?>&title=<?php wp_title('&laquo;', true, 'right'); ?>"><img title="Digg This Story" alt="Digg This Story" src="http://soso.bz/jscss/digg.gif" border="0"></a>
+		<a target="_blank" href="http://del.icio.us/post?url=<?php echo get_post_meta($post->ID, 'SosoBzShortURL', true); ?>&title=<?php wp_title('&laquo;', true, 'right'); ?>"><img title="Add to del.icio.us" alt="Add to del.icio.us" src="http://soso.bz/jscss/delicious.gif" border="0"></a>  
+		<a target="_blank" href="http://myweb2.search.yahoo.com/myresults/bookmarklet?u=<?php echo get_post_meta($post->ID, 'SosoBzShortURL', true); ?>&t=<?php wp_title('&laquo;', true, 'right'); ?>"><img title="Add Yahoo Myweb" alt="Add Yahoo Myweb" src="http://soso.bz/jscss/yahoo_myweb.gif" border="0"></a> 
+		<a target="_blank" href="http://www.google.com/bookmarks/mark?op=edit&bkmk=<?php echo get_post_meta($post->ID, 'SosoBzShortURL', true); ?>&title=<?php wp_title('&laquo;', true, 'right'); ?>"><img title="Add Google Bookmarks" alt="Add Google Bookmarks" src="http://soso.bz/jscss/google_bmarks.gif" border="0"></a>  
+		<a target="_blank" href="http://blogmarks.net/my/new.php?mini=1&url=<?php echo get_post_meta($post->ID, 'SosoBzShortURL', true); ?>&title=<?php wp_title('&laquo;', true, 'right'); ?>"><img title="Add to Blogmarks" alt="Add to Blogmarks" src="http://soso.bz/jscss/blogmarks.gif" border="0"></a>
+		<a target="_blank" href="https://favorites.live.com/quickadd.aspx?marklet=1&mkt=en-us&url=<?php echo get_post_meta($post->ID, 'SosoBzShortURL', true); ?>&title=<?php wp_title('&laquo;', true, 'right'); ?>"&top=1"><img title="Add to Windows Live" alt="Add to Windows Live" src="http://soso.bz/jscss/windows_live.gif" border="0"></a>
+		<a target="_blank" href="javascript:window.external.AddFavorite('<?php echo get_post_meta($post->ID, 'SosoBzShortURL', true); ?>','<?php wp_title('&laquo;', true, 'right'); ?>');"><img title="Add to Favorites" alt="Add to Favorites" src="http://soso.bz/jscss/internetexplorer.gif" border="0"></a></p>
+    <?php endif ?>
 </div>
