@@ -24,7 +24,7 @@ Also this will help promote your blog.
 
 == Screenshots ==
 
-1. A example of the effect
+1. A example
 
 == Changelog ==
 
