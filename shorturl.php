@@ -14,7 +14,7 @@ class SosoBz_Short_URL
 {
     function create($post_id)
     {
-        if (!$apiURL = get_option('gentlesourceShortUrlApiUrl')) {
+        if (!$apiURL = get_option('sosobzShortUrlApiUrl')) {
             $apiURL = DEFAULT_API_URL;
         }
 
@@ -73,7 +73,7 @@ class SosoBz_Short_URL
 
         foreach ($options AS $key => $val)
         {
-            $opt[$key] = get_option('gentlesourceShortUrl' . $key);
+            $opt[$key] = get_option('sosobzShortUrl' . $key);
         }
 
         $shortUrl = get_post_meta($post->ID, 'SosoBzShortURL', true);
