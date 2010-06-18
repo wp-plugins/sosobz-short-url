@@ -3,7 +3,7 @@ Contributors: SosoBz
 Donate link: http://soso.bz
 Tags: short url, short, url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging,soso ,seo ,soso.bz ,blog tool
 Requires at least: 2.5
-Tested up to: 2.9.2
+Tested up to: 3.0
 Stable tag: 1.0.0
 
 Automatically shortens the blog post URL.
