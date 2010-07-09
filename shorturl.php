@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Soso.Bz Short URL
+Plugin Name: SosoBz Short Url
 Plugin URI: http://Soso.Bz
 Description: Automatically shortens the blog post URL.
-Version: 1.0.0
-Author: Soso.Bz
+Version: 1.0
+Author: SosoBz
 Author URI: http://Soso.Bz
 */
 
@@ -85,7 +85,7 @@ class SosoBz_Short_URL
         $shortUrlEncoded = urlencode($shortUrl);
 
         ob_start();
-        include './wp-content/plugins/sosobz-short-url/show.php';
+        include './wp-content/plugins/post-address-shortening/show.php';
         $content .= ob_get_contents();
         ob_end_clean();
 
@@ -96,8 +96,6 @@ class SosoBz_Short_URL
 $gssu = new SosoBz_Short_URL;
 
 if (is_admin()) {
-    add_action('edit_post', array(&$gssu, 'create'));
-    add_action('save_post', array(&$gssu, 'create'));
     add_action('publish_post', array(&$gssu, 'create'));
 } else {
     add_filter('the_content', array(&$gssu, 'display'));
