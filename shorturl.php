@@ -1,14 +1,14 @@
 <?php
 /*
-Plugin Name: SosoBz Short Url
-Plugin URI: http://Soso.Bz
+Plugin Name: SosoBz Short URL
+Plugin URI: http://ur1.bz
 Description: Automatically shortens the blog post URL.
-Version: 1.0
-Author: SosoBz
-Author URI: http://Soso.Bz
+Version: 1.3
+Author: Soso.Bz
+Author URI: http://ur1.bz
 */
 
-define('DEFAULT_API_URL', 'http://soso.bz/api.php?url=%s');
+define('DEFAULT_API_URL', 'http://ur1.bz/api.php?url=%s');
 
 class SosoBz_Short_URL
 {

@@ -1,10 +1,10 @@
 ﻿=== SosoBz Short URL ===
 Contributors: SosoBz
-Donate link: http://soso.bz
-Tags: short url, short, url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging,soso ,seo ,soso.bz ,blog tool
+Donate link: http://ur1.bz
+Tags: short url, short, url, shortener, url shortener, url shortening, urls, links, tinyurl, twitter, microblogging, seo ,ur1.bz ,blog tool
 Requires at least: 2.5
 Tested up to: 3.0
-Stable tag: 1.0.0
+Stable tag: 1.3
 
 Automatically shortens the blog post URL.
 
@@ -27,7 +27,9 @@ Also this will help promote your blog.
 1. A example
 
 == Changelog ==
+= 1.3 =
 
-= 1.0.0 =
+* Bug
+= 1.0 =
 
 * Initial release
